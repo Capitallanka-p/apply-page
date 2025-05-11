@@ -1,40 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Service Info</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="container">
-    <div class="card">
-      <h1>Who can use our service?</h1>
-      <div class="info">
-        <div class="item">
-          <span class="icon">😊</span>
-          <div>
-            <strong>Age</strong><br />
-            22 - 80 years
-          </div>
-        </div>
-        <div class="item">
-          <span class="icon">📍</span>
-          <div>
-            <strong>Location</strong><br />
-            Sri Lanka
-          </div>
-        </div>
-        <div class="item">
-          <span class="icon">💼</span>
-          <div>
-            <strong>Occupation</strong><br />
-            Whoever who generates an income can use our services
-          </div>
-        </div>
-      </div>
-      <a href="https://your-link-here.com" class="btn">Get money now</a>
-    </div>
-  </div>
-</body>
-</html>
+/* style.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('https://i.ibb.co/hFMmtP0N/lake-mountains.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  backdrop-filter: blur(6px);
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.info {
+  margin: 20px 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1e90ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0f7ae5;
+}
