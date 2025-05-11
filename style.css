@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: url('https://your-background-image.jpg') no-repeat center center/cover;
+  background: url('https://i.ibb.co/hFMmtP0N/lake-mountains.jpg') no-repeat center center/cover;
   color: white;
 }
 
@@ -15,14 +15,20 @@ body {
 }
 
 .card {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.15); /* semi-transparent card */
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
   text-align: center;
   max-width: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .card h1 {
   font-size: 24px;
   font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
 }
 
 .info {
@@ -34,6 +40,7 @@ body {
   align-items: flex-start;
   gap: 10px;
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .icon {
@@ -48,5 +55,10 @@ body {
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #009e3c;
 }
